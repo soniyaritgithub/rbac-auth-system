@@ -141,43 +141,43 @@ Protected API Access
 ## Login Page
 
 ```text
-screenshots/login.png
+![Login Page](screenshots/login.png)
 ```
 
 ## Register Page
 
 ```text
-screenshots/register.png
+![Register Page](screenshots/register.png)
 ```
 
 ## Dashboard (USER)
 
 ```text
-screenshots/dashboard-user.png
+![Dashboard USER](screenshots/dashboard-user.png)
 ```
 
 ## Dashboard (ADMIN)
 
 ```text
-screenshots/dashboard-admin.png
+![Dashboard ADMIN](screenshots/dashboard-admin.png)
 ```
 
 ## Admin Page
 
 ```text
-screenshots/admin-page.png
+![Admin Page](screenshots/admin-page.png)
 ```
 
 ## Swagger Documentation
 
 ```text
-screenshots/swagger.png
+![Swagger](screenshots/swagger.png)
 ```
 
 ## Mobile Responsive View
 
 ```text
-screenshots/mobile-view.png
+![Mobile View](screenshots/mobile-view.png)
 ```
 
 ---
