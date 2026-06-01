@@ -6,16 +6,16 @@ A Full Stack Role Based Authentication System built using Spring Boot, React, JW
 
 # Features
 
-✅ User Registration
-✅ JWT Authentication
-✅ Login / Logout Functionality
-✅ Role Based Access Control (RBAC)
-✅ Protected Routes
-✅ Admin Route Protection
-✅ Responsive UI (Mobile / Tablet / Desktop)
-✅ Swagger API Documentation
-✅ Dashboard with User Information
-✅ Admin Dashboard Access Control
+✅ User Registration  
+✅ JWT Authentication  
+✅ Login / Logout Functionality  
+✅ Role Based Access Control (RBAC)  
+✅ Protected Routes  
+✅ Admin Route Protection  
+✅ Responsive UI (Mobile / Tablet / Desktop)  
+✅ Swagger API Documentation  
+✅ Dashboard with User Information  
+✅ Admin Dashboard Access Control  
 
 ---
 
@@ -140,45 +140,31 @@ Protected API Access
 
 ## Login Page
 
-```text
-![Login Page](screenshots/login.png)
-```
+![Login Page](./screenshots/login.png)
 
 ## Register Page
 
-```text
-![Register Page](screenshots/register.png)
-```
+![Register Page](./screenshots/register.png)
 
 ## Dashboard (USER)
 
-```text
-![Dashboard USER](screenshots/dashboard-user.png)
-```
+![Dashboard USER](./screenshots/dashboard-user.png)
 
 ## Dashboard (ADMIN)
 
-```text
-![Dashboard ADMIN](screenshots/dashboard-admin.png)
-```
+![Dashboard ADMIN](./screenshots/dashboard-admin.png)
 
 ## Admin Page
 
-```text
-![Admin Page](screenshots/admin-page.png)
-```
+![Admin Page](./screenshots/admin-page.png)
 
 ## Swagger Documentation
 
-```text
-![Swagger](screenshots/swagger.png)
-```
+![Swagger](./screenshots/swagger.png)
 
 ## Mobile Responsive View
 
-```text
-![Mobile View](screenshots/mobile-view.png)
-```
+![Mobile View](./screenshots/mobile-view.png)
 
 ---
 
