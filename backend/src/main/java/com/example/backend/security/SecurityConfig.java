@@ -4,13 +4,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 
 import org.springframework.security.config.http.SessionCreationPolicy;
 
 import org.springframework.security.web.SecurityFilterChain;
-
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
@@ -18,35 +16,25 @@ public class SecurityConfig {
 
     private final JwtAuthFilter jwtAuthFilter;
 
-    public SecurityConfig(
+    public SecurityConfig(JwtAuthFilter jwtAuthFilter) {
 
-            JwtAuthFilter jwtAuthFilter
-
-    ) {
-
-        this.jwtAuthFilter =
-                jwtAuthFilter;
+        this.jwtAuthFilter = jwtAuthFilter;
     }
 
     @Bean
     public SecurityFilterChain securityFilterChain(
-
             HttpSecurity http
-
     ) throws Exception {
 
         http
 
                 .cors(cors -> {})
 
-                .csrf(
-                        AbstractHttpConfigurer::disable
-                )
+                .csrf(AbstractHttpConfigurer::disable)
 
                 .sessionManagement(session ->
 
                         session.sessionCreationPolicy(
-
                                 SessionCreationPolicy.STATELESS
                         )
                 )
@@ -54,6 +42,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
 
                         .requestMatchers(
+
+                                "/",   // Added root URL access
 
                                 "/auth/register",
 
@@ -72,9 +62,7 @@ public class SecurityConfig {
                         .requestMatchers("/user/**")
 
                         .hasAnyRole(
-
                                 "USER",
-
                                 "ADMIN"
                         )
 
@@ -91,12 +79,10 @@ public class SecurityConfig {
                 )
 
                 .formLogin(
-
                         form -> form.disable()
                 )
 
                 .httpBasic(
-
                         httpBasic -> httpBasic.disable()
                 );
 
